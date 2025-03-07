@@ -1,0 +1,100 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #380915, #650d26);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #a12b4e, #520d1f);
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffcccb;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.job-box, .contact-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.job-box:hover, .contact-box:hover {
+    transform: scale(1.05);
+}
+
+.job-box p, .contact-box p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact-box h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #ffcccb;
+}
+
+.contact-box a {
+    color: #ffeb3b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+.apply-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #ff4757, #ff6b81);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+    font-size: 18px;
+}
+
+.apply-btn:hover {
+    background: linear-gradient(135deg, #ff6b81, #ff4757);
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
